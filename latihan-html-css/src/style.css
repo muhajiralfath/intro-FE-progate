@@ -1,0 +1,88 @@
+form input,
+form textarea {
+    width: 60%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    width: 30%;
+    padding: 15px 10px;
+    background: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+.main,
+#tentang-saya,
+#proyek-contoh,
+#hubungi-saya {
+    padding: 100px;
+}
+
+.ninja-ken {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: url(./Ninja\ Ken.png) center center no-repeat;
+    background-size: contain;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.name span {
+    color: yellow;
+}
+
+.daftar-proyek div {
+    width: 25%;
+}
+
+.daftar-proyek div img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    form button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    form button {
+        width: 75%;
+    }
+
+    header a {
+        display: none;
+    }
+
+    .main,
+    #tentang-saya,
+    #proyek-contoh,
+    #hubungi-saya {
+        padding: 50px;
+    }
+
+    .daftar-proyek {
+        flex-direction: column;
+    }
+
+    .daftar-proyek div {
+        width: 100%;
+    }
+}
